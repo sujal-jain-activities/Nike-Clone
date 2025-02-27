@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    html, body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    }
+    .background{
+        position: relative;
+        
+    }
+    video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        position: fixed;
+    }
+    .nav{
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+        margin-right: 20px;
+        /* background-color: red; */
+        height: 100px;
+        overflow: hidden;
+        font-size: 18px;
+        font-weight: 800;
+        margin-top: 20px;
+    }
+    .nav img{
+        width: 100px;
+        mix-blend-mode: color-burn;
+        padding-bottom: 10px;
+    }
+    h4{
+         font-weight: 900;
+         color: white;
+    }
+    .para{
+        z-index: 1000;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 300px;
+        left: 350px;
+        
+    }
+    .para h1{
+        font-size: 70px;
+        color: black;
+        font-weight: 900;
+    }
+    .Right{
+        color: white;
+    }
+    .para h4{
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+    }
+    .para p{
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .para button{
+        margin-top: 30px;
+        font-size: 20px;
+        background-color: black;
+        padding: 10px;
+        border: solid 1px white;
+        border-radius: 20px;
+        color: white;
+    }
+    .page2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 700px;
+        left: 80px;
+        color: white;
+        width: 1100px;
+        margin-top: 20px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .page2h1{
+        position: absolute;
+        color: #FF6F00;
+        top: 1100px;
+        left: 180px;
+        font-size: 65px;
+        font-weight: 900;
+    }
+    .page2p2{
+        position: absolute;
+        color: white;
+        top: 1200px;
+        left: 560px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .page2btn2{
+        margin-top: 30px;
+        font-size: 20px;
+        background-color: black;
+        padding: 10px;
+        border: solid 1px white;
+        border-radius: 20px;
+        color: white;
+        position: absolute;
+        top: 1220px;
+        left: 580px;
+    }
+    .page3h1{
+        position: absolute;
+        color: white;
+        top: 1400px;
+        left: 10px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .page3{
+        position: absolute;
+        top: 1500px;
+        /* background-color: red; */
+        width: 100%;
+        display: flex;
+        height: 350px;
+        overflow-x: auto;
+    }
+    .cards{
+       min-width: 320px;
+       height: 300px;
+       background-color: white;
+        margin: 10px;
+        display: inline-block;
+        z-index: 1000;
+        flex-shrink: 0;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        
+    }
+    .cards:hover> img{
+        transform: scale(1.1);
+        transition: all 0.5s;
+        transform:translateY(-10px), scale(2);
+        z-index: 1000;
+    }
+    .cards:hover{
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        transition: all 0.5s;
+        transform: translateY(-10px);
+    }
+    
+    .page3:hover .cards:not(:hover) {
+        filter: blur(2px);
+        transition: all 0.5s;
+        opacity: 0.5;
+    }
+    
+    .cards img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        
+    }
+    .cards h4{
+        position: absolute;
+        color: black;
+        left: 15px;
+        bottom: 50px;
+        font-size: 35px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    .page3-container {
+        position: relative;
+        width: 100%;
+    }
+    
+    .scroll-btn {
+        position: absolute;
+        top: 1650px;
+        transform: translateY(-50%);
+        width: 70px;
+        height: 70px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        z-index: 1001;
+        transition: all 0.3s;
+    }
+    
+    .scroll-btn:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .scroll-left {
+        left: 20px;
+    }
+    
+    .scroll-right {
+        right: 20px;
+    }
+    
+    .page3 {
+        scroll-behavior: smooth;  /* Add smooth scrolling */
+    
+    }
+    
