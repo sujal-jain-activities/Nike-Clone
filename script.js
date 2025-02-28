@@ -24,6 +24,22 @@ tl.from(".para", {
     stagger: 2,
     scale: 0.5
 });
+gsap.registerPlugin(ScrollTrigger)
+gsap.from(".age2",{
+    scrollTrigger:{
+        trigger:".age2",
+        scroller:"body",
+        start:"top 80%",
+        end:"top 50%",
+        scrub:1,
+        // markers:true,
+},
+    y:500,
+    duration:2,
+    opacity:0,
+    scale:0.5,
+})
+
 document.addEventListener('DOMContentLoaded', function() {
     const scrollContainer = document.querySelector('.page3');
     const leftBtn = document.querySelector('.scroll-left');
@@ -46,3 +62,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
